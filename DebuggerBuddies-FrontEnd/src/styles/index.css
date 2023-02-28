@@ -1,0 +1,33 @@
+.admin-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    font-size: 20px;
+    flex-direction: column;
+    height: 650px;
+    width: 850px;
+    border-radius: 10px;
+}
+
+.admin-input input{
+    display: flex;
+    font-size: 30px;
+    width:520px;
+    margin: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+a:visited{
+    color: #333333;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #8b2235;
+}
