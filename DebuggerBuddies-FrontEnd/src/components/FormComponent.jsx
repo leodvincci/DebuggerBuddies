@@ -20,11 +20,16 @@ export default function FormComponent(props){
 
                 <h2>{props.formType}</h2>
                 <form className={"admin-input"} action="">
-                    <input name={"firstName"} onChange={hello} type="text" placeholder={"First Name"}/>
-                    <input name={"lastName"} onChange={hello} type="text" placeholder={"Last Name"}/>
-                    <input name={"email"} onChange={hello} type="email" placeholder={"Email"}/>
-                    <input name={"password"} onChange={hello} type="text" placeholder={"Password"}/>
-                    <input name={"role"} onChange={hello} type="text" placeholder={"Role"}/>
+                    <input
+                        name={"firstName"}
+                        onChange={hello} type="text"
+                        placeholder={"First Name"}
+                        value={formData.firstName}
+                    />
+                    <input name={"lastName"} onChange={hello} type="text" placeholder={"Last Name"} value={formData.lastName}/>
+                    <input name={"email"} onChange={hello} type="email" placeholder={"Email"} value={formData.email}/>
+                    <input name={"password"} onChange={hello} type="text" placeholder={"Password"} value={formData.password}/>
+                    <input name={"role"} onChange={hello} type="text" placeholder={"Role"} value={formData.role}/>
                 </form>
 
                 <button type="button" className={`btn btn-${props.btnType}`}>{props.btnTxt}</button>
