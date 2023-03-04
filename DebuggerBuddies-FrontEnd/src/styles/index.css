@@ -1,4 +1,4 @@
-.admin-form{
+.admin-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,24 +10,85 @@
     border-radius: 10px;
 }
 
-.admin-input input{
+.theHead{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:30px;
+    font-size:25px;
+    color: crimson;
+}
+
+.admin-input input {
     display: flex;
     font-size: 30px;
-    width:520px;
+    width: 520px;
     margin: 30px;
     border-radius: 10px;
     border: none;
     padding: 10px;
 }
 
-a:visited{
+a:visited {
     color: #333333;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #8b2235;
 }
+
+.the-info-card {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 50px;
+    font-size: 20px;
+    height: 350px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.butts {
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+#update-btn {
+    border-radius: 8px;
+    border: none;
+    color: inherit;
+    width: 100px;
+
+    background-color: #698BE1;
+}
+
+#remove-btn {
+    border-radius: 8px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: inherit;
+    background-color: #E16969;
+}
+
+
+#remove-btn:hover, #update-btn:hover {
+    background-color: #606060;
+}
+
+#remove-btn:active, #update-btn:active {
+    background-color: #090909;
+}
+
+span {
+    font-weight: bold;
+}
+
