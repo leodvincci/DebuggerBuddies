@@ -5,7 +5,7 @@ import App from './App'
 import "./styles/index.css"
 import AddNewUserPage from "./pages/AddNewUserPage.jsx";
 import UpdateUserPage from "./pages/UpdateUserPage.jsx";
-import DeleteUserPage from "./pages/DeleteUserPage.jsx";
+import ViewAllUsers from "./pages/ViewAllUsers.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,14 +14,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Link to={"/admin"}>View Users</Link>
               <Link to={"/admin/adduser"}>Add User</Link>
               <Link to={"/admin/updateuser"}>Update User</Link>
-              <Link to={"/admin/deleteuser"}>Delete User</Link>
+              {/*<Link to={"/admin/deleteuser"}>Delete User</Link>*/}
           </div>
 
           <Routes>
               <Route path="/admin" element={<App />} />
               <Route path="/admin/adduser" element={<AddNewUserPage />} />
               <Route path="/admin/updateuser" element={<UpdateUserPage />} />
-              <Route path="/admin/deleteuser" element={<DeleteUserPage />} />
+              {/*<Route path="/admin/deleteuser" element={<ViewAllUsers />} />*/}
           </Routes>
       </BrowserRouter>
   </React.StrictMode>,
